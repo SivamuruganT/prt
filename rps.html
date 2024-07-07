@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <link rel="stylesheet" href="css-prtc/rps.css">
+    </head>
+    <body>
+        <div class="div1">
+            <div class="buttenposition">
+                <button class="but1" onclick="
+                    compchoice()
+                    rock();
+                    scoor();
+                    alert(`Computer choses: ${compchoice()},  You ${rslt}
+Your scoor is : Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
+                </button>
+                <button class="but2" onclick="
+                    compchoice()
+                    paper();
+                    scoor();
+                    alert(`Computer choses: ${compchoice()},  You ${rslt}
+Your scoor is : Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
+                </button>
+                <button class="but3" onclick="
+                    compchoice()
+                    Scissors();
+                    scoor();
+                    alert(`Computer choses: ${compchoice()},  You ${rslt}
+Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
+                </button>
+            </div>w
+            <div class="rsult">
+                <P>😁Helloooooo😁😉</p>  
+            </div>
+        </div>
+    <script>
+        let rslt="",choice="";
+        const scor = {
+            win:0,
+            lse:0,
+            te:0
+        };
+        function compchoice(){
+            choice= Math.random();
+            if (choice>=0 && choice<1/3)
+                return "Rock";
+            else if( choice>1/3 && choice<2/3)
+                return "Paper";
+            else if(choice>2/3 && choice<=1)
+                return "Scissors";
+        }
+        function paper(){
+            if (compchoice()==="Rock")
+                rslt="Won";
+            else if(compchoice()==="Scissors")
+                rslt="Lose";
+            else
+                rslt="Tie";
+        }
+        function Scissors(){
+            if (compchoice()==="Rock")
+                rslt="Lose";
+            else if(compchoice()==="Scissors")
+                rslt="Tie";
+            else
+                rslt="Won";
+        }
+        function rock(){
+            if (compchoice()==="Rock")
+                rslt="Tie";
+            else if(compchoice()==="Scissors")
+                rslt="Lose";
+            else
+                rslt="Won";
+        }
+        function scoor(){
+            if(rslt==="Won")
+                return scor.win++;
+            else if(rslt==="Lose")
+                return scor.lse++;
+            else
+                return scor.te++;
+        }
+    </script>
+    </body>
+</html> 
