@@ -1,0 +1,62 @@
+
+body{
+    background-color: rgb(16, 27, 27, 0.8);
+}
+button{
+    background-color: rgb(180, 172, 51);
+    border-radius: 50%;
+    min-width: 100px;
+    min-height: 100px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: black 0px 0px 20px;
+}
+button:active{
+    cursor: grabbing;
+    box-shadow:black 0px 0px 15px ;
+}
+p{
+    background-color:rgb(180, 172, 51);
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+div{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+.div1{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    min-width: 480px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.buttenposition{
+    width: 100%;
+    justify-content: space-evenly;
+}
+.but1{
+    background-image: url(../images/rock.png);
+    background-blend-mode: darken;
+    background-size: contain;
+}
+.but2{
+    background-image: url(../images/paper.png);
+    background-blend-mode: darken;
+    background-size: contain;
+}
+.but3{
+    background-image: url(../images/scissors.png);
+    background-blend-mode: darken;
+    background-size: contain;
+}
