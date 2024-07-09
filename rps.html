@@ -10,21 +10,21 @@
                     compchoice()
                     rock();
                     scoor();
-                    alert(`Computer choses: ${compchoice()},  You ${rslt}
+                    alert(`Computer choses: ${rslt},  You ${choice}
 Your scoor is : Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
                 </button>
                 <button class="but2" onclick="
                     compchoice()
                     paper();
                     scoor();
-                    alert(`Computer choses: ${compchoice()},  You ${rslt}
+                    alert(`Computer choses: ${rslt},  You ${choice}
 Your scoor is : Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
                 </button>
                 <button class="but3" onclick="
                     compchoice()
                     Scissors();
                     scoor();
-                    alert(`Computer choses: ${compchoice()},  You ${rslt}
+                    alert(`Computer choses: ${rslt},  You ${choice}
 Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
                 </button>
             </div>w
@@ -50,32 +50,32 @@ Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
         }
         function paper(){
             if (rslt==="Scissors")
-                return "Lose";
+                choice="Lose";
             else if(rslt==="Paper")
-                return "Tie";
+                choice="Tie";
             else
-                return "Won";
+                choice="Won";
         }
         function Scissors(){
             if (rslt==="Rock")
-                return "Lose";
+                choice="Lose";
             else if(rslt==="Scissors")
-                return "Tie";
+                choice="Tie";
             else
-                return "Won";
+                choice="Won";
         }
         function rock(){
             if (rslt==="Paper")
-                return "Lose";
+                choice="Lose";
             else if(rslt==="Rock")
-                return "Tie";
+                choice="Tie";
             else
-                return "Won";
+                choice="Won";
         }
         function scoor(){
-            if(rslt==="Won")
+            if(choice==="Won")
                 return scor.win++;
-            else if(rslt==="Lose")
+            else if(choice==="Lose")
                 return scor.lse++;
             else
                 return scor.te++;
