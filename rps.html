@@ -42,35 +42,35 @@ Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
         function compchoice(){
             choice= Math.random();
             if (choice>=0 && choice<1/3)
-                return "Rock";
+                rslt="Rock";
             else if( choice>1/3 && choice<2/3)
-                return "Paper";
+                rslt="Paper";
             else if(choice>2/3 && choice<=1)
-                return "Scissors";
+                rslt="Scissors";
         }
         function paper(){
-            if (compchoice()==="Rock")
-                rslt="Won";
-            else if(compchoice()==="Scissors")
-                rslt="Lose";
+            if (rslt==="Rock")
+                return "Won";
+            else if(rslt==="Scissors")
+                return "Lose";
             else
-                rslt="Tie";
+                return "Tie";
         }
         function Scissors(){
-            if (compchoice()==="Rock")
-                rslt="Lose";
-            else if(compchoice()==="Scissors")
-                rslt="Tie";
+            if (rslt==="Rock")
+                return "Lose";
+            else if(rslt==="Scissors")
+                return "Tie";
             else
-                rslt="Won";
+                return "Won";
         }
         function rock(){
-            if (compchoice()==="Rock")
-                rslt="Tie";
-            else if(compchoice()==="Scissors")
-                rslt="Lose";
+            if (rslt==="Rock")
+                return "Tie";
+            else if(rslt==="Scissors")
+                return "Lose";
             else
-                rslt="Won";
+                return "Won";
         }
         function scoor(){
             if(rslt==="Won")
