@@ -49,12 +49,12 @@ Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
                 rslt="Scissors";
         }
         function paper(){
-            if (rslt==="Rock")
-                return "Won";
-            else if(rslt==="Scissors")
+            if (rslt==="Scissors")
                 return "Lose";
-            else
+            else if(rslt==="Paper")
                 return "Tie";
+            else
+                return "Won";
         }
         function Scissors(){
             if (rslt==="Rock")
@@ -65,10 +65,10 @@ Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
                 return "Won";
         }
         function rock(){
-            if (rslt==="Rock")
-                return "Tie";
-            else if(rslt==="Scissors")
+            if (rslt==="Paper")
                 return "Lose";
+            else if(rslt==="Rock")
+                return "Tie";
             else
                 return "Won";
         }
