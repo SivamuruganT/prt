@@ -10,26 +10,27 @@
                     compchoice()
                     rock();
                     scoor();
-                    alert(`Computer choses: ${rslt},  You ${choice}
-Your scoor is : Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
+                    document.querySelector('.scr1').innerHTML=`Computer choses: ${rslt}....You ${choice}...`;
+                    document.querySelector('.scr2').innerHTML=`Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`;">
                 </button>
                 <button class="but2" onclick="
                     compchoice()
                     paper();
                     scoor();
-                    alert(`Computer choses: ${rslt},  You ${choice}
-Your scoor is : Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
+                    document.querySelector('.scr1').innerHTML=`Computer choses: ${rslt}....You ${choice}...`;
+                    document.querySelector('.scr2').innerHTML=`Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`;">
                 </button>
                 <button class="but3" onclick="
                     compchoice()
                     Scissors();
                     scoor();
-                    alert(`Computer choses: ${rslt},  You ${choice}
-Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`);">
+                    document.querySelector('.scr1').innerHTML=`Computer choses: ${rslt}....You ${choice}...`;
+                    document.querySelector('.scr2').innerHTML=`Your scoor is Won=${scor.win} Tie =${scor.te} Lose=${scor.lse}`;">
                 </button>
-            </div>w
+            </div>
             <div class="rsult">
-                <P>😁Helloooooo😁😉</p>  
+                <P class="scr1">😁Helloooooo😁😉</p> 
+                <P class="scr2">😉</p>  
             </div>
         </div>
     <script>
