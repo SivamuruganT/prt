@@ -30,8 +30,11 @@ p{
 div{
     display: flex;
     flex: 1;
-    justify-content: center;
     align-items: center;
+}
+.rsult{
+    flex-direction: column;
+    justify-content: center;
 }
 .div1{
     display: flex;
